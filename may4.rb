@@ -13,6 +13,7 @@
 # node = Node('root', Node('left', Node('left.left')), Node('right'))
 # assert deserialize(serialize(node)).left.left.val == 'left.left'
 #
+
 class Node
   attr_accessor :val, :left, :right
   def initialize(val, left = nil, right = nil)
@@ -22,12 +23,12 @@ class Node
   end
 end
 
-def deserialize(node)
+def deserialize(str)
   node
 end
 
 def serialize(node)
-  node
+  
 end
 
 # node = Node.new('root')
