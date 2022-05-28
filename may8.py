@@ -45,7 +45,7 @@ def is_true(var):
 def ways_to_decode(num_str):
   num_ways = 0
 
-  
+
   decodable = list(filter(lambda x: x == True, 
   [
     num_str[i] in MAPPINGS,
@@ -56,7 +56,7 @@ def ways_to_decode(num_str):
   num_ways += len(decodable)
 
   return num_ways
-
+``
 
 def main():
   print(ways_to_decode("111"))
