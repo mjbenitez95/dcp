@@ -19,9 +19,8 @@ def generate_products(nums):
   return products
 
 def main():
-  arr = [1, 2, 3, 4, 5]
-  products = generate_products(arr)
-  print(products)
+  print(generate_products([1, 2, 3, 4, 5]) == [120, 60, 40, 30, 24])
+  print(generate_products([3, 2, 1]) == [2, 3, 6])
 
 if __name__ == "__main__":
   main()
