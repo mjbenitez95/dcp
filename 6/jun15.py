@@ -14,10 +14,17 @@ def rand7():
 
 def main():
   nums = [0] * 7
-  for _ in range(1, 1000000):
+  runs = 350000
+  for _ in range(1, runs):
     nums[rand7() - 1] += 1
 
-  print(nums)
+  success = True
+  for num in nums:
+    # accept 1.2 % deviation
+    if (num / (runs / 7)) > 1.2:
+      success = False
+
+  print(success)
 
 if __name__ == "__main__":
   main()
