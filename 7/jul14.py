@@ -20,8 +20,8 @@ def num_occurences(dimension, value):
     return occurences
 
 def main():
-    print(num_occurences(6, 12))
-    print(num_occurences(6, 36))
+    print(num_occurences(6, 12) == 4)
+    print(num_occurences(6, 36) == 1)
 
 if __name__ == "__main__":
     main()
