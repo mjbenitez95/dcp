@@ -16,10 +16,16 @@ def rand5():
 
 def main():
   nums = [0] * 5
-  for i in range(1, 1000000):
+  runs = 100000
+  for _ in range(1, runs):
     nums[rand5() - 1] += 1
 
-  print(nums)
+  success = True
+  for num in nums:
+    if num/(runs / 5 ) > 1.2:
+      success = False
+
+  print(success)
 
 if __name__ == "__main__":
   main()
