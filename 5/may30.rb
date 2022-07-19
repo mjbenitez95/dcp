@@ -39,8 +39,9 @@ end
 def main
   encoded = run_length_encode("AAAABBBCCDAA")
   decoded = run_length_decode("4A3B2C1D2A")
-
-  puts "#{encoded} == 4A3B2C1D2A, #{decoded} == AAAABBBCCDAA"
+  puts (encoded == '4A3B2C1D2A')
+  puts (decoded == 'AAAABBBCCDAA')
+  puts (run_length_decode(run_length_encode('AAAABBBCCDAA')) == 'AAAABBBCCDAA')
 end
 
 main()
