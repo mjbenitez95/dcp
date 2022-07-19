@@ -29,12 +29,12 @@ def least_missing_positive_integer(arr):
   return counter
     
 def main():
-  print(least_missing_positive_integer([-1, 1, 3, 2, 1, 4, 6]))
-  print(least_missing_positive_integer([-1, 2, 4, 5, 1]))
-  print(least_missing_positive_integer([3, 4, -1, 1]))
-  print(least_missing_positive_integer([1, 2, 0]))
-  print(least_missing_positive_integer([-3, -2, -1]))
-  print(least_missing_positive_integer([-3, -2, 1]))
+  print(least_missing_positive_integer([-1, 1, 3, 2, 1, 4, 6]) == 5)
+  print(least_missing_positive_integer([-1, 2, 4, 5, 1]) == 3)
+  print(least_missing_positive_integer([3, 4, -1, 1]) == 2)
+  print(least_missing_positive_integer([1, 2, 0]) == 1)
+  print(least_missing_positive_integer([-3, -2, -1]) == 1)
+  print(least_missing_positive_integer([-3, -2, 1]) == 2)
 
 if __name__ == '__main__':
   main()
