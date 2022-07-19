@@ -25,5 +25,5 @@ def cdr(pair):
     return b
   return pair(second_element)
 
-print(car(cons('a','b')))
-print(cdr(cons('a','b')))
+print(car(cons('a','b')) == 'a')
+print(cdr(cons('a','b')) == 'b')
