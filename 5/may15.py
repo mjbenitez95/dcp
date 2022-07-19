@@ -6,7 +6,7 @@
 from math import sqrt
 import random
 
-RUNS = 10000000
+RUNS = 1000000
 
 def distance(point_a, point_b):
   return sqrt((point_a[0] - point_b[0])**2 + (point_a[1] - point_b[1])**2)
@@ -22,7 +22,7 @@ def main():
 
   ratio_of_points = points_inside_circle / RUNS
   approximated_pi = round(ratio_of_points * 4, 3)
-  print(approximated_pi)
+  print("Pi approximated to:", approximated_pi)
 
   return
 
