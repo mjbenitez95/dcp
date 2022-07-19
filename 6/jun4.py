@@ -34,9 +34,9 @@ def fewestPalindrome(s):
         count += 1
         
 def main():
-    print(fewestPalindrome("race"))
-    print(fewestPalindrome("google"))
-    print(fewestPalindrome("matthew"))
+    print(fewestPalindrome("race") == "ecarace")
+    print(fewestPalindrome("google") == "elgoogle")
+    print(fewestPalindrome("matthew") == "matthewehttam")
         
 if __name__ == '__main__':
     main()
