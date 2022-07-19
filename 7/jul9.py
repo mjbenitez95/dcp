@@ -9,10 +9,10 @@ def max_product_of_three(nums):
   return max(with_negatives, only_positives)
 
 def main():
-  print(max_product_of_three([1, 5, 7, 2, 3]))
-  print(max_product_of_three([-10, -10, 5, 2]))
-  print(max_product_of_three([7, 8, 2, 15, 0]))
-  print(max_product_of_three([-50, 35, 10, 20, 0]))
+  print(max_product_of_three([1, 5, 7, 2, 3]) == 105)
+  print(max_product_of_three([-10, -10, 5, 2]) == 500)
+  print(max_product_of_three([7, 8, 2, 15, 0]) == 840)
+  print(max_product_of_three([-50, 35, 10, 20, 0]) == 7000)
 
 if __name__ == "__main__":
   main()
