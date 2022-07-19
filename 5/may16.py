@@ -16,7 +16,7 @@ def pick(big_stream):
     return picked_element
 
 if __name__ == '__main__':
-  runs = 100000
+  runs = 10000
   nums = list(range(1, 50 + 1))
   picks = [0] * len(nums)
 
@@ -30,4 +30,4 @@ if __name__ == '__main__':
     deviations.append(abs(avg - i))
   
   max_percent_deviation = (max(deviations) / runs) * 100
-  print(max_percent_deviation, deviations)
+  print(max_percent_deviation < 1)
