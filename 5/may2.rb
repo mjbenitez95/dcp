@@ -48,6 +48,11 @@ test_cases = [
 ].freeze
 
 test_cases.each do |test| 
-  puts "Error" if list_sum_k(test[:arr], test[:target]) != test[:expected]
-  puts "Error" if list_sum_k_in_place_compare(test[:arr], test[:target]) != test[:expected]
+  list_sum_success = list_sum_k(test[:arr], test[:target]) == test[:expected]
+  in_place_success = list_sum_k_in_place_compare(test[:arr], test[:target]) == test[:expected]
+
+  puts "List Sum Error" if list_sum_success == false
+  puts "In Place Error" if in_place_success == false
+
+  puts "Test Case Passed!" if list_sum_success && in_place_success
 end
