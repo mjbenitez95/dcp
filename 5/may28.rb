@@ -26,10 +26,10 @@ end
   
 
 def main()
-  puts(balanced('[](){}'))
-  puts(balanced('[][][]}]'))
-  puts(balanced('[{}]({{[]}})'))
-  puts(balanced('[{]}({{[]}})'))
+  puts(balanced('[](){}') == true)
+  puts(balanced('[][][]}]') == false)
+  puts(balanced('[{}]({{[]}})') == true)
+  puts(balanced('[{]}({{[]}})') == false)
 end
 
 main()
